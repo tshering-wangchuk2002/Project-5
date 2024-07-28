@@ -1,0 +1,278 @@
+@use "vars";
+
+* {
+    font-family: "Roboto";
+}
+
+// header section starts
+header {
+    .apple {
+        padding: 0px 84px;
+        border-bottom: 1px solid vars.$grey;
+
+        .sub_container_one {
+            padding: 12px 0px 0px 0px;
+
+            .final_container {
+                display: flex;
+                justify-content: space-between;
+
+                // justify-content: space-between;
+                .address {
+                    display: flex;
+                    gap: 16px;
+
+                    .info {
+                        padding: 3px 16px;
+                        border-right: 1px solid vars.$grey;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 21px;
+
+                        &:nth-child(1) {
+                            font-weight: 600;
+                            font-size: 21px;
+                            line-height: 24px;
+                        }
+                    }
+
+                    span {
+                        padding: 3px 16px;
+                        // border-right: 1px solid vars.$grey;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+                }
+
+                .icons {
+                    gap: 12px;
+
+                    img {
+                        padding-right: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .sub_container_two {
+        border-bottom: 1px solid vars.$grey;
+
+        .mango {
+            padding: 21px 84px;
+
+            nav {
+                div {
+                    .menu {
+                        // border: 1px solid black;
+                        ul {
+                            gap: 32px;
+
+                            li {
+                                font-size: 21px;
+                                font-weight: 400;
+                                line-height: 150%;
+
+                                a {
+                                    color: #000000;
+                                }
+
+                                button {
+                                    font-size: 21px;
+                                    background-color: #000000;
+                                    padding: 8px 20px;
+                                    color: #ffffff;
+                                    transition: all 0.5s ease;
+                                    &:hover{
+                                        background-color: #ffffff;
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// header section ends
+
+// about section starts
+.about_section {
+    padding: 106px 85px;
+    // border: 1px solid black;
+
+    .main_container {
+        // border: 1px solid black;
+        display: flex;
+        .sub_container {
+            &:nth-child(1) {
+                // border: 1px solid black;
+                padding-top: 44px;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: center;
+                // align-items: center;
+                .heading {
+                    // border: 1px solid black;
+                    h2 {
+                        font-weight: 700;
+                        font-size: 63px;
+                        line-height: 120%;
+                        margin-bottom: 42px;
+                    }
+                }
+                .items_div{
+                    // border: 1px solid black;
+                    display: flex;
+                    flex-wrap: wrap;
+                    // gap: 32px;
+                    row-gap: 42px;
+                    column-gap: 32px;
+                    margin-bottom: 32px;
+                    .items{
+                        max-width: 391px;
+                        // border: 1px solid black;
+                        h6{
+                            font-weight: 700;
+                            font-size: 26px;
+                            line-height: 140%;
+                            margin-bottom: 21px;
+                        }
+                        p{
+                            font-weight: 400;
+                            font-size: 21px;
+                            line-height: 150%;
+                        }
+                    }
+                }
+                .btns_div{
+                    // border: 1px solid black;
+                    padding-top: 21px;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 32px;
+                    button{
+                        padding: 11px 32px;
+                        border-radius: 6px;
+                        border: 1px solid black;
+                        font-size: 21px;
+                        font-weight: 400;
+                        line-height: 150%;
+                        transition: all 0.5s ease;
+                        &:hover{
+                            background-color: #000000;
+                            color: #ffffff;
+                        }
+                    }
+                    a{
+                        color: #000000;
+                        text-decoration: none;
+                        font-size: 21px;
+                        line-height: 150%;
+                        font-weight: 400;
+                        span{
+                            margin-left: 11px;
+                        }
+                    }
+                }
+             }
+        }
+    }
+}
+// about section ends
+
+// mission section starts
+.mission_section{
+    // border: 1px solid black;
+    padding: 148px 85px 148px 85px;
+    background-color: #F7F7F7;
+    .main_container{
+        display: flex;
+        gap: 106px;
+        .sub_container{
+            // border: 1px solid blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+            &:nth-child(1){
+                border-radius: 7px;
+                img{
+                    border-radius: 7px;
+                }
+            }
+            &:nth-child(2){
+                h2{
+                   font-weight: 700;
+                   font-size: 63px;
+                   line-height: 120%;
+                   margin-bottom: 21px;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 23px;
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+}
+// mission section ends
+
+// footer starts
+footer{
+    padding: 105px 85px;
+    .main_container{
+        .sub_container_one{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 106px;
+            .menu{
+                ul{
+                    display: flex;
+                    column-gap: 42px;
+                    li{
+                        list-style: none;
+                        font-weight: 600;
+                        font-size: 21px;
+                        line-height: 150%;
+                    }
+                }
+            }
+            .logo{
+                display: flex;
+                column-gap: 18px;
+            }
+        }
+        .sub_container_two{
+            border-top: 1.32px solid  black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 32px;
+            padding-top: 44px;
+            p{
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 150%;
+                margin-bottom: 0px;
+            }
+            a{
+                display: block;
+                color: #000000;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 150%;
+            }
+        }
+    }
+}
+// footer ends
+
+
+
+
