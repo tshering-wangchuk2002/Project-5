@@ -101,7 +101,8 @@ header {
 
 // hero section starts
 .hero_section {
-    background-image: url(image/hero\ img.png);
+    background-image: url(image/heroimg.png);
+    background-image: url('image/heroimg.png');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 377px 1078px 377px 84px;
