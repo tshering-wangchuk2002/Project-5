@@ -72,8 +72,7 @@ header .sub_container_two .mango nav div .menu ul li button:hover {
 }
 
 .hero_section {
-  background-image: url(image/heroimg.png);
-  background-image: url("image/heroimg.png");
+  background-image: url("../image/heroimg.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 377px 1078px 377px 84px;
